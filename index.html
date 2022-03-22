@@ -1,0 +1,80 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="body__tint">
+      <h1>Day Trading Utility Belt</h1>
+      <div class="container">
+        <div class="container__panel">
+          <h3>Exit Price</h3>
+          <hr />
+          <div class="container__input">
+            <input id="userBuyPrice" />
+            <button id="btnCalculateExitPrices">CALCULATE</button>
+          </div>
+          <hr />
+          <div class="container__listItem">
+            <p id="takeProfit10">0</p>
+            <p>Take Profit (+10%)</p>
+          </div>
+          <div class="container__listItem">
+            <p id="takeProfit5">0</p>
+            <p>Take Profit (+5%)</p>
+          </div>
+          <div class="container__listItem">
+            <p id="stopLoss">0</p>
+            <p>Stop Loss (-5%)</p>
+          </div>
+        </div>
+        <div class="container__panel">
+          <div class="account1">
+            <h3>Position Size ($100 investment)</h3>
+            <div class="positionSize__section">
+              <!-- <input id="userEstimatedBuyPrice" /> -->
+              <!-- <button id="btnCalculateShares">Calculate</button> -->
+              <div id="positionSizeAccount1">0</div>
+              <div>Shares</div>
+            </div>
+          </div>
+          <div class="account2">
+            <h3>Position Size ($400 investment)</h3>
+            <div class="positionSize__section">
+              <!-- <input id="userEstimatedBuyPrice" /> -->
+              <!-- <button id="btnCalculateShares">Calculate</button> -->
+              <div id="positionSizeAccount2">0</div>
+              <div>Shares</div>
+            </div>
+          </div>
+        </div>
+        <div class="container__panel">
+          <h3>Dip Percentage</h3>
+          <hr />
+          <div class="container__input">
+            <input id="topOfDip" />
+            <button id="btnCalculateDipPercentage">CALCULATE</button>
+          </div>
+          <hr />
+          <div class="container__listItem">
+            <span id="ten">0</span>
+            <span>(-10%)</span>
+          </div>
+          <div class="container__listItem">
+            <span id="twenty">0</span>
+            <span>(-20%)</span>
+          </div>
+          <div class="container__listItem">
+            <span id="thirty">0</span>
+            <span>(-30%)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="dip_calculator.js"></script>
+    <script src="position_calculator.js"></script>
+    <script src="exit_position.js"></script>
+  </body>
+</html>

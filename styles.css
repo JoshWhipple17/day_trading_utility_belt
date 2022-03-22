@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  background: url(images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body__tint {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container__panel {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #333333;
+  color: white;
+  box-shadow: 5px 5px 20px 1px black;
+  overflow: hidden;
+}
+
+.container__listItem {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.container__listItem > p:nth-child(1),
+.container__listItem > span:nth-child(1) {
+  color: rgb(1, 180, 1);
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.container__listItem > span:nth-child(1) {
+  display: block;
+}
+
+h1 {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 20px;
+  text-shadow: 5px 5px 10px black;
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+div > input {
+  width: 100%;
+  padding: 5px;
+  display: block;
+  text-align: center;
+  border-radius: 10px 10px 0px 0px;
+}
+
+div > button {
+  width: 100%;
+  color: white;
+  padding: 5px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: rgb(1, 180, 1);
+  font-weight: bold;
+}
+
+.positionSize__section {
+  text-align: center;
+  line-height: bottom;
+  margin-top: 50px;
+}
+
+.container__panel > .account1 {
+  margin-bottom: 60px;
+}
+
+#positionSizeAccount1,
+#positionSizeAccount2 {
+  color: rgb(1, 180, 1);
+  font-size: 55px;
+  font-weight: bolder;
+}
+
+hr {
+  margin: 20px 0px;
+}
